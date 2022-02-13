@@ -36,3 +36,6 @@ export PATH="$PATH:$HOME/fvm/default/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
+# default editor from vim to nvim
+export EDITOR="/usr/local/bin/nvim"
+
