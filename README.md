@@ -1,11 +1,5 @@
 # dotfiles
 
-## zsh
-[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
-
-## terminal app
-[kitty](https://github.com/kovidgoyal/kitty)
-
 ## nvim
 |  plugin  |  description  |
 | ---- | ---- |
@@ -16,3 +10,9 @@
 |  [atom one dark](https://github.com/navarasu/onedark.nvim)  |  theme  |
 
 <img width="1792" alt="nvim" src="https://user-images.githubusercontent.com/29598247/153736751-298bce9c-1692-43e3-9429-3328762ce481.png">
+
+## zsh
+[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+
+## terminal app
+[kitty](https://github.com/kovidgoyal/kitty)
