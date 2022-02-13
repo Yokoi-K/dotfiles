@@ -32,4 +32,5 @@ nnoremap <ESC><ESC> :nohl<CR>
 " buffer tab
 nnoremap <silent> { :bprev<CR>
 nnoremap <silent> } :bnext<CR>
-nnoremap bd :bd<CR>
+nnoremap <C-b> :bd<CR>
+
