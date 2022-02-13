@@ -14,11 +14,12 @@ set line-graphics = utf-8
 
 # diff highlight
 set diff-highlight = true
-color  diff-header       default magenta
-color  diff-chunk        black   white
+
+# focus color(disable highlight)
+color cursor white default underline bold
+color title-focus black yellow bold
 
 # key bind
-
 # 'P' 
 bind generic P      ?git push -u %(remote) %(repo:head)
 
