@@ -1,0 +1,6 @@
+node_modules
+*.log
+.build
+history.json
+.DS_Store
+nvim/plugged

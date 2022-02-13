@@ -1,0 +1,14 @@
+{
+	"coc.preferences.formatOnSaveFiletypes": [
+		"dart",
+		"json"
+	],
+	"flutter.workspaceFolder.ignore": [
+		"~/.pub-cache",
+		"~/fvm"
+ 	],
+	"dart.analysisExcludedFolders": [
+		"~/.pub-cache",
+		"~/fvm"
+ 	]
+}
