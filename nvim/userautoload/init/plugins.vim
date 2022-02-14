@@ -6,6 +6,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " bracket auto close
 Plug 'cohama/lexima.vim'
+
+" remove surround
 Plug 'tpope/vim-surround'
 
 " editorconfig
@@ -80,5 +82,14 @@ Plug 'vim-denops/denops.vim'
 Plug 'Shougo/pum.vim'
 Plug 'Shougo/ddc-matcher_head'
 Plug 'shun/ddc-vim-lsp'
+
+" sandwich
+Plug 'machakann/vim-sandwich'
+
+" repeat
+Plug 'tpope/vim-repeat'
+
+" highlightedyank
+Plug 'machakann/vim-highlightedyank'
 
 call plug#end()
