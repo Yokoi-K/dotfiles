@@ -2,6 +2,7 @@
 nnoremap x "_x
 nnoremap s "_s
 nnoremap d "_d
+nnoremap c "_c
 
 " line yank
 nnoremap Y Vy 
