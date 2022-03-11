@@ -51,7 +51,6 @@ Plug 'jiangmiao/auto-pairs'
 
 " theme
 Plug 'navarasu/onedark.nvim'
-Plug 'KeitaNakamura/neodark.vim'
 
 " treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

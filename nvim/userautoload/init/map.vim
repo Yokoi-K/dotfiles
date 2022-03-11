@@ -4,9 +4,6 @@ nnoremap s "_s
 nnoremap d "_d
 nnoremap c "_c
 
-" line yank
-nnoremap Y Vy 
-
 " screen switching
 nnoremap sh <C-w>h
 nnoremap sj <C-w>j
@@ -33,5 +30,8 @@ nnoremap <ESC><ESC> :nohl<CR>
 " buffer tab
 nnoremap <silent> { :bprev<CR>
 nnoremap <silent> } :bnext<CR>
-nnoremap <C-b> :bd<CR>
+nnoremap <C-b> :bw<CR>
+
+" - => ^, + -> $
+nnoremap + $
 
