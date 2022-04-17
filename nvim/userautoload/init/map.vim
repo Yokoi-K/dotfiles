@@ -35,3 +35,5 @@ nnoremap <C-b> :bw<CR>
 " - => ^, + -> $
 nnoremap + $
 
+" blame at Github
+nnoremap <silent> <C-g> :<C-u>ToGithub<CR>

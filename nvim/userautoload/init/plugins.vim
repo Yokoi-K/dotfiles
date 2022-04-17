@@ -91,4 +91,9 @@ Plug 'tpope/vim-repeat'
 " highlightedyank
 Plug 'machakann/vim-highlightedyank'
 
+" ansi color code
+Plug 'm00qek/baleia.nvim'
+
+" blame at Github
+Plug 'Yokoi-K/vim-to-github'
 call plug#end()
