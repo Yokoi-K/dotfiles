@@ -10,6 +10,10 @@ Plug 'cohama/lexima.vim'
 " remove surround
 Plug 'tpope/vim-surround'
 
+" replace
+Plug 'kana/vim-operator-user'
+Plug 'kana/vim-operator-replace'
+
 " editorconfig
 Plug 'editorconfig/editorconfig-vim'
 
@@ -96,4 +100,11 @@ Plug 'm00qek/baleia.nvim'
 
 " blame at Github
 Plug 'Yokoi-K/vim-to-github'
+
+" tab
+Plug 'ap/vim-buftabline'
+
+" mark
+Plug 'jacquesbh/vim-showmarks'
+
 call plug#end()

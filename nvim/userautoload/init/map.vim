@@ -1,8 +1,8 @@
 " disable yank
 nnoremap x "_x
 nnoremap s "_s
-nnoremap d "_d
-nnoremap c "_c
+nnoremap d "dd
+nnoremap c "cc
 
 " screen switching
 nnoremap sh <C-w>h
@@ -30,7 +30,7 @@ nnoremap <ESC><ESC> :nohl<CR>
 " buffer tab
 nnoremap <silent> { :bprev<CR>
 nnoremap <silent> } :bnext<CR>
-nnoremap <C-b> :bw<CR>
+nnoremap <C-b> :bdelete<CR>
 
 " - => ^, + -> $
 nnoremap + $
