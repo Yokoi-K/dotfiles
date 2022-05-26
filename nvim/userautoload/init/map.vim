@@ -35,5 +35,5 @@ nnoremap <C-b> :bdelete<CR>
 " - => ^, + -> $
 nnoremap + $
 
-" blame at Github
-nnoremap <silent> <C-g> :<C-u>ToGithub<CR>
+" don't yank when paste
+vnoremap p "_dP
