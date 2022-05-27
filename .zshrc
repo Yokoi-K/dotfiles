@@ -73,6 +73,14 @@ zle -N run-nvim
 bindkey -r '^n'
 bindkey '^n' run-nvim
 
+# lazygit
+function run-lazygit() {
+  lazygit
+}
+zle -N run-lazygit
+bindkey -r '^l'
+bindkey '^l' run-lazygit
+
 # alias
 alias ls="gls --color=auto"
 alias la="ls -la"
