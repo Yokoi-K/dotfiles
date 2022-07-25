@@ -14,6 +14,7 @@ end
 toggleApp("kitty", "space")
 toggleApp("Slack", "h")
 toggleApp("Google Chrome", "j")
-toggleApp("Typora", "k")
+toggleApp("Joplin", "k")
 toggleApp("Todoist", "l")
+toggleApp("Xcode", "n")
 
