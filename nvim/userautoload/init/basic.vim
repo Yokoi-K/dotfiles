@@ -22,13 +22,13 @@ set noswapfile
 set nobackup
 set nowritebackup
 
-"" multibyte
+" multibyte
 set ambiwidth=double
 
-"" clipboard
+" clipboard
 set clipboard=unnamed
 
-"" background
+" background
 highlight! Normal ctermbg=NONE guibg=NONE
 highlight! NonText ctermbg=NONE guibg=NONE
 highlight! LineNr ctermbg=NONE guibg=NONE
@@ -36,6 +36,10 @@ highlight! LineNr ctermbg=NONE guibg=NONE
 " encoding
 let $LANG='en_US.UTF-8'
 set encoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileencodings=utf-8
 set fileformats=unix,dos,mac
 
+" set guifont=NF:h12
+
+" centering cursor
+set scrolloff=999
