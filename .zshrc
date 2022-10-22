@@ -1,5 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # Powerlevel10k
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -15,7 +15,7 @@ zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme, from:github, as:them
 # This plugin is heavy, so I use "bindkey -v"
 # zplug "jeffreytse/zsh-vi-mode"
 
-zplug "b4b4r07/enhancd", use:"init.sh"
+# zplug "b4b4r07/enhancd", use:"init.sh"
 zplug "mafredri/zsh-async"
 zplug "chrissicool/zsh-256color"
 zplug "stedolan/jq"
@@ -80,9 +80,31 @@ zle -N run-lazygit
 bindkey -r '^l'
 bindkey '^l' run-lazygit
 
+# history
+function run-history() {
+  BUFFER=`history -n 1 | tac  | awk '!a[$0]++' | peco`
+  CURSOR=$#BUFFER
+  zle reset-prompt
+}
+zle -N run-history 
+bindkey '^h' run-history 
+
 # alias
 alias ls="gls --color=auto"
 alias la="ls -la"
 
+# history settings
+HISTFILE=${HOME}/.zsh_history
+HISTSIZE=100000
+SAVEHIST=1000000
+setopt inc_append_history
+setopt share_history
+
+# AUTO etx
+setopt AUTO_CD
+setopt AUTO_PARAM_KEYS
+
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+
 # Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
